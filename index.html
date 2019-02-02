@@ -17,24 +17,58 @@
 </head>
 <body>
     <div class="container">
-        <div class="row" id="myDiv"></div>
-        <div class="row>">
-            <button id="crystal1" class="btnCrystal" value="">Crystal 1</button>
-            <button id="crystal2" class="btnCrystal" value="">Crystal 2</button>
-            <button id="crystal3" class="btnCrystal" value="">Crystal 3</button>
-            <button id="crystal4" class="btnCrystal" value="">Crystal 4</button>
+        <div class="row" >
+            <div class="col-md-12" id="crystalCollector">
+                <h1>Crystals Collector Game</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="crystalCollector">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p> 
+                <p>You win the game by matching your score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts , the game will change the values of each crystal.</p>   
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="myDiv">
+                Your random number displays here.
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3" id="score">
+                <p>Your score is </p><p id="yourscore"></p>
+            </div>
+        </div>
+        <div class="row" id="scoretally">
+            <div class="col-md-6">
+                <p>Wins</p>
+                <p id="yourwins">0</p>
+            </div>
+            <div class="col-md-6">
+                <p>Losses</p>
+                <p id="yourlosses">0</p>
+            </div>
         </div>
 
         <div class="row">
-            <p>your score is : </p><p id="yourscore"></p>
+            <div class="col-md-3">
+                <button id="crystal1" class="btnCrystal" value="" >Crystal 1</button>
+            </div>
+            <div class="col-md-3">
+                <button id="crystal2" class="btnCrystal" value="">Crystal 2</button>
+            </div>
+            <div class="col-md-3">
+                <button id="crystal3" class="btnCrystal" value="">Crystal 3</button>
+            </div>
+            <div class="col-md-3">
+                <button id="crystal4" class="btnCrystal" value="">Crystal 4</button>
+            </div>
+            
         </div>
-        <div class="row">
-            <p>Wins : </p><p id="yourwins">0</p>
-        </div>
-        <div class="row">
-            <p>Losses : </p>
-            <p id="yourlosses">0</p>
-        </div>
+
     </div>
     
 </body>

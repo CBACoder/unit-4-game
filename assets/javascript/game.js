@@ -10,14 +10,6 @@ $(document).ready(function() {
 
     // formula to generate a random number between 19 and 120
     var randonNumber = "";
-    console.log('random number : ',randonNumber);
-
-    // formula to generate the crystal random number between 1 and 12
-    var crystalRandonNumber = Math.floor((Math.random() * 12) + 1);
-    console.log('crystal random number : ',crystalRandonNumber);
-
-
-
 
     //function to restart game whenever there is a loss/win
     function restartGame(){
@@ -68,7 +60,7 @@ $(document).ready(function() {
     function calculateWin(){
         if(score > randonNumber){
             loses++
-            alert("Your score is greater than random number. You lose!");
+            alert("Sorry Your score is greater than random number. You lose!");
 
             //update losses
             $("#yourlosses").text(loses);
@@ -78,7 +70,7 @@ $(document).ready(function() {
 
         }else if(score === randonNumber){
             wins++
-            alert("You win a game !");
+            alert("Congrats, You win a crystal !");
 
             //update wins
             $("#yourwins").text(wins);
